@@ -1,0 +1,84 @@
+body {
+    font-family: Arial;
+}
+
+.whole {
+    width: 900px;
+    height: 900px;
+    background-color: #cbe5ff;
+    /*The box model properties*/
+    padding-left: 40px;
+    padding-right: 40px;
+    left: 100px;
+    right: 100px;
+}
+
+.rect {
+    position: fixed;
+    border-top-style: dotted;
+    border-left-style: dotted;
+    border-bottom-style: dotted;
+    top: 200px;
+    right: -2px;
+    color: #cbe5ff;
+    
+}
+
+.header {
+ visibility: hidden;   
+}
+
+.box {
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    z-index: 1;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.preview {
+    position: absolute;
+    right: 500px;
+    top: 40px;
+    z-index: 0;
+    background-color: #84befe;
+    width: 400px;
+    height: 400px;
+}
+
+.container {
+    
+}
+
+.nav {
+}
+
+.mid {
+    
+}
+
+.last {
+    
+}
+
+.left {
+    
+}
+
+.left-head {
+    
+}
+
+.right {
+    
+}
+
+.right-head {
+    
+}
+
+.footer {
+    
+}
