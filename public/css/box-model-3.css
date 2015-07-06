@@ -4,13 +4,13 @@ body {
 
 .whole {
     width: 900px;
-    height: 900px;
     background-color: #cbe5ff;
     /*The box model properties*/
     padding-left: 40px;
     padding-right: 40px;
     left: 100px;
     right: 100px;
+    margin: auto;
 }
 
 .rect {
@@ -19,18 +19,42 @@ body {
     border-left-style: dotted;
     border-bottom-style: dotted;
     top: 200px;
-    right: -2px;
-    color: #cbe5ff;
-    
+    right: -5px;
+    color: #84befe;
+    background-color: white;
+}
+
+.rect a {
+    color: #84befe;
+    text-align: center;
+}
+
+.rect a:link {
+    text-decoration: none;
+}
+
+.rect a:visited {
+    text-decoration: none;
+}
+
+.rect a:hover {
+    text-decoration: underline;
+}
+
+.rect a:active {
+    text-decoration: none;
 }
 
 .header {
- visibility: hidden;   
+    visibility: hidden;   
+    width: 1000px;
+    position: fixed;
+    margin: auto;
 }
 
 .box {
-    position: absolute;
-    left: 40px;
+    position: relative;
+    left: 180px;
     top: 80px;
     z-index: 1;
     background-color: white;
@@ -39,23 +63,57 @@ body {
 }
 
 .preview {
-    position: absolute;
-    right: 500px;
+    position: relative;
+    right: 180px;
     top: 40px;
     z-index: 0;
     background-color: #84befe;
-    width: 400px;
+    width: 750px;
     height: 400px;
 }
 
 .container {
-    
+    width: 905px;
+    height: 500px;
+    background-color: white;
+    top: 450px;
+    left: 180px;
+    right: 0px;
+    position: absolute;
+    z-index: 1;
 }
 
-.nav {
+.nav a {	
+    top: 460px;
+    left: 800px;
+    right: 0px;
+    float: left;
+    width: 100px;
+	text-decoration: none;
+	color: white;
+	background-color: #84befe;
+	padding: 10px;
+	border-right: 1px solid white;
+	text-align: center;
+	z-index: 2;
+}
+
+.nav a:hover {
+	background-color: white;
+	color: #84befe;
+	text-decoration: none;
 }
 
 .mid {
+    top: 460px;
+    left: 800px;
+    right: 0px;
+    float: left;
+    width: 100px;
+    height: 900px;
+    background-color: white;
+    z-index: 1;
+    
     
 }
 
