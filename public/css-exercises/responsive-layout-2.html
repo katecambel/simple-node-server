@@ -2,6 +2,14 @@
 <html>
 	<head>
 		<style>
+			/*All of the elements should have the box-sizing property set to border-box.
+			Make use of meta tag to specify the author and description of your exercise.
+			Make use of meta tag to set the width of the page to follow the screen-width of the device 
+			and set the initial zoom level when the page is first loaded by the browser.
+			The CSS rule for the column sizes are already included in the HTML page, you just need to set 
+			the right classes for each div tag (column) to fix the display of the page when viewed on 
+			desktop, tablet and mobile phone (See the 3 screenshots).*/
+		
 			/* Insert Additional Styles Here */
 			
 			body {
@@ -21,9 +29,9 @@
 			}
 			.vertical ul {
 				list-style-type: none;
-				margin: 0;
+				margin: 0px;
 				padding: 0;
-				width: 200px;
+				width: 180px;
 				padding-top: 10px;
 				margin-left: 10px;
 			}
@@ -53,12 +61,24 @@
 				color: #ffffff;
 				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 				float: left;
-				width: 23.77%;
+				width: 25%;
 				text-align: center;
+				box-sizing: border-box;
 			}
 			.horizontal li:hover {
 				background-color: #f2dde1;
 				color: #000000;
+			}
+			.row, .column {
+				box-sizing: box-border;
+			}
+			.row::before, .row::after {
+    			content: " ";
+    			display: table;
+			}
+
+			.row::after {
+    			clear: both;
 			}
 			.footer {
 				background-color: #8d3441;
@@ -108,7 +128,7 @@
 		</style>
 	</head>
 	<body>
-		<div class="row">
+		<div class="row navigation">
 			<div class="column horizontal">
 				<ul>
 					<li>Home</li>
@@ -125,8 +145,8 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="column vertical">
+		<div class="row button">
+			<div class="column vertical col-m-1 col-2">
 				<ul>
 					<li>Button 1</li>
 					<li>Button 2</li>
@@ -139,7 +159,7 @@
 				</ul>
 			</div>
 
-			<div class="column">
+			<div class="column col-m-3 col-5">
 				<h1>Welcome</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -147,7 +167,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 
-			<div class="column">
+			<div class="column col-m-3 col-4">
 				<h1>News</h1>
 				<p><strong>06.27.15 - News Header</strong> <br/> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
 				<p><strong>06.28.15 - News Header</strong> <br/> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
