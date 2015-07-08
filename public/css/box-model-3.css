@@ -17,6 +17,7 @@ body {
     border-top-style: dashed;
     border-left-style: dashed;
     border-bottom-style: dashed;
+    border-width: 2px;
     top: 200px;
     right: -5px;
     color: #84befe;
