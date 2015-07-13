@@ -7,53 +7,6 @@ margin: 10px;
     clear:left;
 }
 
-#div1 {
-width: 300px; 
-height: 350px;
-margin: 5px;
-background-color: lightblue; 
-float: left;
-}
-
-#div2 {
-width: 300px; 
-height: 350px;
-margin: 5px;
-background-color: #40E0D0; 
-float: right;
-}
-
-#div1 {
-width: 300px; 
-height: 350px;
-margin: 5px;
-background-color: lightblue; 
-float: left;
-}
-
-#div2 {
-width: 300px; 
-height: 350px;
-margin: 5px;
-background-color: #40E0D0; 
-float: left;
-}
-
-a {
-float:left;
-width:100px;
-text-decoration:none;
-color:white;
-background-color:#6495ED;
-padding: 10px;
-border-right:1px solid white;
-text-align:center;
-}
-
-a:hover {
-background-color:gray;
-}
-
 .box {
 background-color: gray;
 width: 100px;
@@ -75,20 +28,8 @@ right:20px;
 }
 
 .pos-container{
-position:relative;
+position: fixed;
 
-}
-.pos-absolute {
-background-color: #d6d7d8;
-width: 100px;
-height: 100px;
-margin: 5px;
-
-/*To properly position an element using absolute, top or bottom (choose one) 
-and/or left or right (choose one) properties should be used.*/
-position:absolute;
-top:20px;
-right:20px;
 }
 
 .pos-fixed {
@@ -102,4 +43,35 @@ and/or left or right (choose one) properties should be used.*/
 position:fixed;
 top:20px;
 right:20px;
+}
+
+a {
+float:left;
+width:100px;
+text-decoration:none;
+color:white;
+background-color:#6495ED;
+padding: 10px;
+border-right:1px solid white;
+text-align:center;
+}
+
+a:hover {
+background-color:gray;
+}
+
+#div1 {
+width: 300px; 
+height: 350px;
+margin: 5px;
+background-color: lightblue; 
+float: left;
+}
+
+#div2 {
+width: 300px; 
+height: 350px;
+margin: 5px;
+background-color: #40E0D0; 
+float: left;
 }
