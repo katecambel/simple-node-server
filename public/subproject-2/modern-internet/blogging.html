@@ -1,12 +1,12 @@
- <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
     <head>
-      <title>Subproject 1 - History of the Internet</title>
+      <title>Subproject 2 - Modern Internet</title>
       
       <!--META-DATA-->
       <meta name="author" content="Katherine Anne T. Cambel">
-      <meta name="description" content="Subproject 1">
-      <meta name="keywords" content="subproject, css, html, materialize">
+      <meta name="description" content="Subproject 2">
+      <meta name="keywords" content="subproject, html, javascript, materialize, jquery">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       
@@ -24,64 +24,51 @@
       <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       
-      <style>a:hover {text-decoration:underline}</style>
     </head>
-
     <body>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       
-      <nav>
-        
+     <!--Header-->
+  <div class="nav-wrapper pink lighten-2" >
+      <span class="white-text center"><h2>CMSC2: Modern Internet</h2></span>
+  </div>
       <!--Navigation Bars-->
-      <div class="nav-wrapper deep-purple lighten-2" >
-        <a href="#" class="brand-logo right">CMSC2: History of the Internet</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/index.html">Index</a></li>
-          <li><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/world-war-2.html">World War 2</a></li>
-          <li><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/early-protocols.html">Early Protocols</a></li>
-          <li><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/the-first-internet.html">The First Internet</a></li>
-          <li class="active"><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/early-world-wide-web.html">Early World Wide Web</a></li>
-        </ul>
-      </div>
-      </nav>
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s7"><a href="#test1">Index</a></li>
+        <li class="tab col s7"><a href="#test2">Network Protocols</a></li>
+        <li class="tab col s7"><a href="#test3">Email</a></li>
+        <li class="tab col s7"><a href="#test4">Search Engines</a></li>
+        <li class="tab col s7 disabled"><a class="active" href="#test5">Blogging</a></li>
+        <li class="tab col s7"><a href="#test6">Video Streaming</a></li>
+        <li class="tab col s7"><a href="#test7">Microblog Social Networking</a></li>
+      </ul>
+    </div>
+      <br>
       <br>
 
       <!--Content-->
-      <div class="container deep-purple lighten-4">
+      <div class="container pink lighten-4">
         <!-- Page Content goes here -->
-        <span class="blue-grey-text text-lighten-1"><h1>Early World Wide Web</h1></span>
-        
-        <p><em>It was during the 1990s when it all began.</em> </p>
+        <span class="deep-orange-text text-lighten-1"><h1>Blogging</h1></span>
+  
+      <img class="materialboxed" width="650" src="http://www.ytv.com/sites/default/files/stitch_line_art_colorized_by_fabjoueur-d4j9qo0.png">
+      
+            <p id="demo">JavaScript can change HTML content.</p>
 
-        <p> But the Web and the Internet are two different things - they catch different things; and the Web is one global sea.</p> 
-        
-        <p>In <strong>March 1989, Tim Berners-Lee</strong> wrote a paper entitled <em>Information Management: A Proposal</em> that noted links such as references, which are far more useful than a fixed hierarchal system. He then proposed a <strong>web</strong> - which is a hypertext + the Internet - to connect information.  The Hypertext already existed but documents are in a non-linear way.</p>
-        	
-        <p>In <strong>1991, </strong> he eventually invented the World Wide Web, which is accessible today to anyone with a browser and Internet. The most popular browsers today are <em>Firefox, Google Chrome and Safar.</em></p>
-        
-        <p>But in <strong>1992</strong>, <em>Erwise</em> was the first internet browser and the first to have a graphical interface. </p>
-        
-        <p>In <strong>1993</strong>, <em>Mosaic</em> was the second browser to come around, the most popular then that influenced many browsers to follow suit. </p>
-        
-        <p>In <strong>1994</strong>, <em>Netscape Navigator</em> was invented and took up 90% of web usage in the year after. </p>
-        
-        <p>In the early 90s, the AOL or the first dial-up internet was invented, connecting it to the internet via a telephone line-modem. </p>
-        
-        <p style=“color: amber lighten-4><em> Fun fact, <strong>pizza</strong> was the first thing purchased on the internet. </em></p>
-        
-        <p style=“color: amber lighten-4><em> Another fun fact, Tim Berners-Lee's computer can be found in the London Science Museum. </em></p>
-        
-        <p style=“color: amber lighten-4><em> And another fun fact, on average a webpage is 19 clicks away from every other webpage. </em></p>
-        
-        <p style=“color: amber lighten-4><em> Lastly, 80% of the information on the Web are not yet indexed. </em></p>
+<a href="#"
+onclick="clickme()">
+Click Me!</a>
 
-  </div> 
-            
+          
+  </div>
+  
         <br><br>
         <!--Footer-->
-          <footer class="page-footer deep-purple lighten-2">
+          <footer class="page-footer pink lighten-2">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -126,6 +113,32 @@
         <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-      
+    
+
+<script>    
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+    $("#lesen").click(function() {
+        $.ajax({
+            url : "blogging.txt",
+            success : function (data) {
+                $(".text").html(data);
+            }
+        });
+    });
+}); 
+</script>
+
+<script>
+function clickme() {
+  document.getElementById('demo').innerHTML = 'Hello World'
+}
+</script>
+
     </body>
-  </html>
+</html>

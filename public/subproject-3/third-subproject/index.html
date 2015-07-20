@@ -1,12 +1,12 @@
- <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
     <head>
-      <title>Subproject 1 - History of the Internet</title>
+      <title>Subproject 3 - Additional Stuff</title>
       
       <!--META-DATA-->
       <meta name="author" content="Katherine Anne T. Cambel">
-      <meta name="description" content="Subproject 1">
-      <meta name="keywords" content="subproject, css, html, materialize">
+      <meta name="description" content="Subproject 3">
+      <meta name="keywords" content="subproject, css, html, javascript, materialize, jquery">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       
@@ -25,6 +25,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       
       <style>a:hover {text-decoration:underline}</style>
+      
     </head>
 
     <body>
@@ -35,7 +36,7 @@
       <nav>
         
       <!--Navigation Bars-->
-      <div class="nav-wrapper deep-purple lighten-2" >
+      <div class="nav-wrapper cyan lighten-2" >
         <a href="#" class="brand-logo right">CMSC2: History of the Internet</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li class="active"><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/index.html">Index</a></li>
@@ -49,11 +50,13 @@
       <br>
 
       <!--Content-->
-      <div class="container deep-purple lighten-4">
+      <div class="container cyan lighten-4">
         <!-- Page Content goes here -->
-        <span class="blue-grey-text text-lighten-1"><h1>Points of Discussion</h1></span>
+        <span class="green-text text-lighten-1"><h1>Points of Discussion</h1></span>
+        
+      <img class="materialboxed" width="650" src="http://www.ytv.com/sites/default/files/stitch_line_art_colorized_by_fabjoueur-d4j9qo0.png">
 
-        <ul class="collapsible" data-collapsible="accordion">
+        <ul class="collapsible popout" data-collapsible="accordion">
     <li>
       <div class="collapsible-header"><i class="material-icons">my_location</i>World War 2</div>
       <div class="collapsible-body"><p>How communication was used in WW2, which sparked more research on effective communication and security of communication.</p>
@@ -80,26 +83,29 @@
     </li>
   </ul>
   
+  <a class="btn" onclick="Materialize.toast('Too bad', 4000)">Click if bored!</a>
+
+  
   </div> 
             
         <br><br>
         <!--Footer-->
-          <footer class="page-footer deep-purple lighten-2">
+          <footer class="page-footer cyan lighten-2">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Katherine Anne T. Cambel</h5>
-                <p class="grey-text text-lighten-4">UPLB | BA Communication Arts</p>
-                <p class="grey-text text-lighten-4">katcambel@gmail.com</p>
-                <p class="grey-text text-lighten-4"><a href="https://www.facebook.com/kate.cambel">Facebook</a></p>
-                <p class="grey-text text-lighten-4"><a href="https://plus.google.com/u/0/+KateCambel">Google+</a></p>
+                <p class="green-text text-darken-4">UPLB | BA Communication Arts</p>
+                <p class="green-text text-darken-4">katcambel@gmail.com</p>
+                <p class="green-text text-lighten-4"><a href="https://www.facebook.com/kate.cambel">Facebook</a></p>
+                <p class="green-text text-lighten-4"><a href="https://plus.google.com/u/0/+KateCambel">Google+</a></p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/index.html">First Subproject</a></li>
-                  <li><a class="grey-text text-lighten-3" href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/index.html">Second Subproject</a></li>
-                  <li><a class="grey-text text-lighten-3" href="http://simple-node-server.katecambel.c9.io/subproject-3/additional-stuff/index.html">Third Subproject</a></li>
+                  <li><a class="green-text text-darken-3" href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/index.html">First Subproject</a></li>
+                  <li><a class="green-text text-darken-3" href="#!">Second Subproject</a></li>
+                  <li><a class="green-text text-darken-3" href="#!">Third Subproject</a></li>
                 </ul>
               </div>
             </div>
@@ -107,14 +113,14 @@
           <div class="footer-copyright">
             <div class="container">
 © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a class="green-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>  
       <!--Buttons!-->
 
   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large green lighten-2">
+    <a class="btn-floating btn-large deep-purple lighten-2">
       <i class="large material-icons">grade</i>
     </a>
     <ul>
@@ -129,6 +135,12 @@
         <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      
+      <script>  
+      $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+  </script>
       
     </body>
   </html>
