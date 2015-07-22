@@ -30,23 +30,36 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       
-     <!--Header-->
-  <div class="nav-wrapper pink lighten-2" >
-      <span class="white-text center"><h2>CMSC2: Modern Internet</h2></span>
+      
+  <!--Navigation Bars-->
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/index.html">Index</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/network-protocols.html">Network Protocols</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/email.html">Email</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/search-engines.html">Search Engines</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/blogging.html">Blogging</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/video-streaming.html">Video Streaming</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/microblog-social-networking.html">Microblog Social Networking</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper pink lighten-2">
+    <a href="#!" class="brand-logo">CMSC: Modern Internet</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/index.html">Subproject 1</a></li>
+      <li><a href="http://simple-node-server.katecambel.c9.io/subproject-3/third-subproject/index.html">Subproject 3</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Subproject 2 Topics<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
   </div>
-      <!--Navigation Bars-->
-  <div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s7"><a href="#test1">Index</a></li>
-        <li class="tab col s7"><a href="#test2">Network Protocols</a></li>
-        <li class="tab col s7"><a href="#test3">Email</a></li>
-        <li class="tab col s7"><a href="#test4">Search Engines</a></li>
-        <li class="tab col s7"><a href="#test5">Blogging</a></li>
-        <li class="tab col s7 disabled"><a class="active" href="#test6">Video Streaming</a></li>
-        <li class="tab col s7"><a href="#test7">Microblog Social Networking</a></li>
-      </ul>
-    </div>
+</nav>
+    
       <br>
       <br>
 
@@ -113,7 +126,12 @@ Click Me!</a>
         <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    
+
+<script>
+$( document ).ready(function(){
+  $(".dropdown-button").dropdown();
+});
+</script>
 
 <script>    
   $(document).ready(function(){

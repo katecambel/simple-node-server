@@ -30,23 +30,35 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       
-     <!--Header-->
-  <div class="nav-wrapper pink lighten-2" >
-      <span class="white-text center"><h2>CMSC2: Modern Internet</h2></span>
+  <!--Navigation Bars-->
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/index.html">Index</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/network-protocols.html">Network Protocols</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/email.html">Email</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/search-engines.html">Search Engines</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/blogging.html">Blogging</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/video-streaming.html">Video Streaming</a></li>
+  <li class="divider"></li>
+  <li><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/microblog-social-networking.html">Microblog Social Networking</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper pink lighten-2">
+    <a href="#!" class="brand-logo">CMSC: Modern Internet</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="http://simple-node-server.katecambel.c9.io/subproject-1/history-of-the-internet/index.html">Subproject 1</a></li>
+      <li><a href="http://simple-node-server.katecambel.c9.io/subproject-3/third-subproject/index.html">Subproject 3</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Subproject 2 Topics<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
   </div>
-      <!--Navigation Bars-->
-  <div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s7 disabled"><a class="active" href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/index.html">Index</a></li>
-        <li class="tab col s7"><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/network-protocols.html">Network Protocols</a></li>
-        <li class="tab col s7"><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/email.html">Email</a></li>
-        <li class="tab col s7"><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/search-engines.html">Search Engines</a></li>
-        <li class="tab col s7"><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/blogging.html">Blogging</a></li>
-        <li class="tab col s7"><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/video-streaming.html">Video Streaming</a></li>
-        <li class="tab col s7"><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/microblog-social-networking.html">Microblog Social Networking</a></li>
-      </ul>
-    </div>
+</nav>
+    
       <br>
       <br>
 
@@ -97,7 +109,8 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Network Protocols</h4>
-      <p>A bunch of text</p>
+      <p>Brief information on how current computers send and receive information using the current network protocols.</p>
+      <p><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/network-protocols.html">Read more</a></p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
@@ -113,7 +126,8 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
       <h4>Email</h4>
-      <p>A bunch of text</p>
+      <p>Brief information on how email works.</p>
+      <p><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/email.html">Read more</a></p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
@@ -129,7 +143,8 @@
   <div id="modal3" class="modal">
     <div class="modal-content">
       <h4>Search Engines</h4>
-      <p>A bunch of text</p>
+      <p>Brief information on how search engine works and how indexing came from human indexing to algorithmic indexing.</p>
+      <p><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/search-engines.html">Read more</a></p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
@@ -145,7 +160,8 @@
   <div id="modal4" class="modal">
     <div class="modal-content">
       <h4>Blogging</h4>
-      <p>A bunch of text</p>
+      <p>Brief information on the history of blogging and how it paved way for user created content.</p>
+      <p><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/blogging.html">Read more</a></p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
@@ -161,7 +177,8 @@
   <div id="modal5" class="modal">
     <div class="modal-content">
       <h4>Video Streaming</h4>
-      <p>A bunch of text</p>
+      <p>Brief information on the history of video streaming and how it became a viral success.</p>
+      <p><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/video-streaming.html">Read more</a></p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
@@ -177,7 +194,8 @@
   <div id="modal6" class="modal">
     <div class="modal-content">
       <h4>Microblog Social Networking</h4>
-      <p>A bunch of text</p>
+      <p>Brief information on the history of social networking and the advent of microblogging.</p>
+      <p><a href="http://simple-node-server.katecambel.c9.io/subproject-2/modern-internet/microblog-social-networking.html">Read more</a></p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
@@ -238,9 +256,9 @@
       <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
       
 <script>
- $(document).ready(function(){
-    $('ul.tabs').tabs('select_tab', 'tab_id');
-  });
+$( document ).ready(function(){
+  $(".dropdown-button").dropdown();
+});
 </script>
 
       <script>
