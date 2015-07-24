@@ -1,1 +1,1 @@
-Insert text here
+Video files have a big file size hence how streaming works is that it chops that file into pieces then sends each piece to the device one at a time. Streaming is time-based and multi-processed. It contains 3 layers of data management - encoded bits (such as aac), container that holds the bits together (such as flv or mp4), transport that moves the stream from the media server to the player such as RTMP. There is also the M3U8, a special file, that tells the player the order in which to play the stream.
